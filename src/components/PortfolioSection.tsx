@@ -91,7 +91,7 @@ const PortfolioSection = () => {
                                             <iframe
                                                 style={{
                                                     width: "100%",
-                                                    height: "26vh",
+                                                    height: "100%",
                                                 }}
                                                 src={videoItem.link}
                                                 frameBorder="0"

@@ -345,6 +345,12 @@ section#ABOUT{
 
     
     section#PORTFOLIO{
+        #portfolio-cards-container{
+            .youtube-video-container{
+                height: 26vh;
+            }
+        }
+
         .portfolio-toggle{
             padding: 3% 0 1% 0;
             width: 100%;
