@@ -7,7 +7,7 @@ const video_source = [
 ]
 
 const Hero = () => {
-    const [videoSource, setVideoSource] = useState(video_source[1])
+    const [videoSource, setVideoSource] = useState(video_source[0])
 
     useEffect(() => {
         const handleResize = () => {
