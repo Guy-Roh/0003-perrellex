@@ -1,38 +1,26 @@
-import SideMenu from './SideMenu'
-import React, { useEffect, useState } from 'react';
-
-const video_source = [
-    "/video/hero_reel_comp_1.mp4",
-    "/video/hero_reel_comp_2.mp4",
-]
+import { useMediaQuery } from 'react-responsive';
+import SideMenu from './SideMenu';
 
 const Hero = () => {
-    const [videoSource, setVideoSource] = useState(video_source[0])
-
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth < 1080) {
-                setVideoSource(video_source[1])
-            } else {
-                setVideoSource(video_source[0])
-            }
-        }
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-    
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
         <>
-        <header id="HERO">
-            <div id="video-overlay">
+            <header id="HERO">
+                <div id="video-overlay">
                     <img className="hero-logo" height="280px" id="logo" src="/img/prlx_logo.png" alt="logo" />
-            </div>
-            <video id="videoHero" autoPlay src={videoSource} loop muted></video>
-        </header>
-        <SideMenu />
+                </div>
+                <video 
+                    id="videoHero" 
+                    autoPlay 
+                    src={isMobile ? "/video/hero_reel_comp_2.mp4" : "/video/hero_reel_comp_1.mp4"} 
+                    loop 
+                    muted
+                ></video>
+            </header>
+            <SideMenu />
         </>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;
