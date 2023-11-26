@@ -34,7 +34,6 @@ const ContactSection = () => {
                 <br />
                 <EmailIcon onClick={() => handleCopyToClipboard(2, "e-mail")} style={{ cursor: 'pointer' }} />
                 <br />
-                <PhoneAndroidIcon onClick={() => handleCopyToClipboard(3, "phone number")} style={{ cursor: 'pointer' }} />
             </p>
         </section>
     );

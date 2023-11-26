@@ -101,6 +101,12 @@ h1{
     }
     }
 }
+.youtube-video-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /* Hero */
 header#HERO{
@@ -319,7 +325,7 @@ section#ABOUT{
     #about-wrapper{
         width: 100%;
         height: 60%;
-        font-size: 1.1rem;
+        font-size: 2vh;
     }
   }
 }
@@ -332,12 +338,15 @@ section#ABOUT{
         .mobile-text {
             display: inline; // Show on mobile
         }
+        #about-text{
+            margin-bottom: 30%;
+        }
     }
 
     
     section#PORTFOLIO{
         .portfolio-toggle{
-            padding: 3% 0 0 0;
+            padding: 3% 0 1% 0;
             width: 100%;
             .buttonToggleGroup{
                 width: 100%;
