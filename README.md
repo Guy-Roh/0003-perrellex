@@ -8,5 +8,5 @@
 
 ## Custom components:
 - HoverVideo:
--    This component allows you to play when an mp4 or video file is hovered and pauses when not, with an overlay.
--    Further future upgrades will include tailwind compatibility.
+  - This component allows you to play when an mp4 or video file is hovered and pauses when not, with an overlay.
+  - Further future upgrades will include tailwind compatibility.
