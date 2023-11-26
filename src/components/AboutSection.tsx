@@ -18,8 +18,8 @@ const AboutSection = () => {
     ];
 
     const aboutTextMobile =[
-        "<h2>Hello, I'm <br>Jelle Van de Perre<br> also known as Perrellex</h2><br>With extensive experience in editing and filming,<br> I create high-quality, professional videos, capturing the essence of individual project. My work is marked by continuous growth, passion, and attention to detail.<br><br>Let's collaborate to create inspiring stories.",
-        "<h2>Hallo, ik ben <br>Jelle Van de Perre<br> ook bekend als Perrellex</h2><br>Met uitgebreide ervaring in het bewerken en filmen,<br> maak ik hoogwaardige, professionele video's, waarbij ik de essentie van elk individueel project vastleg. Mijn werk wordt gekenmerkt door voortdurende groei, passie en oog voor detail.<br><br>Laten we samenwerken om inspirerende verhalen te creëren."
+        "<h2>Hello, I'm <br>Jelle Van de Perre<br> also known as Perrellex</h2><br>With extensive experience in editing and filming,<br> I create high-quality, professional videos, capturing the essence of every individual project. My work is marked by continuous growth, passion, and attention to detail.<br><br>Let's collaborate to create inspiring stories.",
+        "<h2>Hallo, ik ben <br>Jelle Van de Perre<br> ook bekend als Perrellex</h2><br>Met uitgebreide ervaring in montage en filmen,<br> maak ik hoogwaardige, professionele video's, waarbij ik de essentie van elk individueel project vastleg. Mijn werk wordt gekenmerkt door voortdurende groei, passie en oog voor detail.<br><br>Laten we samenwerken om inspirerende verhalen te creëren."
     ]
 
     return (
