@@ -13,7 +13,7 @@ const Hero = () => {
                 <video 
                     id="videoHero" 
                     autoPlay 
-                    src={isMobile ? "/video/hero_reel_comp_2.mp4" : "/video/hero_reel_comp_1.mp4"} 
+                    src={isMobile ? "/video/hero_reel_comp_2_1.mp4" : "/video/hero_reel_comp_1.mp4"} 
                     loop 
                     muted
                 ></video>
