@@ -1,22 +1,26 @@
+import React, { lazy, Suspense } from 'react';
 import Hero from './components/Hero';
-import PortfolioSection from './components/PortfolioSection';
-import AboutSection from './components/AboutSection';
-import ContactSection from './components/ContactSection';
+
+// Lazy load the other components
+const PortfolioSection = lazy(() => import('./components/PortfolioSection'));
+const AboutSection = lazy(() => import('./components/AboutSection'));
+const ContactSection = lazy(() => import('./components/ContactSection'));
 
 import './App.scss';
 
-const App =()=> {
+const App = () => {
   return (
     <div>
       <Hero />
       <main>
-        <PortfolioSection />
-        <AboutSection />
-        <ContactSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <PortfolioSection />
+          <AboutSection />
+          <ContactSection />
+        </Suspense>
       </main>
     </div>
   );
 }
 
 export default App;
-
