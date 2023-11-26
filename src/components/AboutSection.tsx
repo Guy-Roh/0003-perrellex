@@ -27,6 +27,7 @@ const AboutSection = () => {
             <h1>ABOUT ME</h1>
             <div id="about-container">
                 <video
+                    preload="metadata"
                     id="about-photo"
                     src="/video/about-photos.mp4"
                     aria-label="photos of videographer Perrellex with camera"
