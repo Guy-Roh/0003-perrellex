@@ -10,7 +10,7 @@ const Hero = () => {
             <div id="video-overlay">
                     <img className="hero-logo"  id="logo" src="/img/prlx_logo.png" alt="logo" />
             </div>
-            <video id="videoHero" autoPlay src="/video/hero_reel.mp4" loop muted></video>
+            <video id="videoHero" autoPlay src="/video/hero_reel_comp.mp4" loop muted></video>
         </header>
         <SideMenu />
         </>

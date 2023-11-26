@@ -26,10 +26,13 @@ const AboutSection = () => {
         <section id="ABOUT">
             <h1>ABOUT ME</h1>
             <div id="about-container">
-                <img
+                <video
                     id="about-photo"
-                    src="/img/about-photos.gif"
-                    alt="photos of videographer Perrellex with camera"
+                    src="/video/about-photos.mp4"
+                    aria-label="photos of videographer Perrellex with camera"
+                    autoPlay
+                    loop
+                    muted
                 />
                 
                 <br />
