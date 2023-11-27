@@ -9,7 +9,6 @@ const SideMenu = () => {
           const handleScroll = () => {
             if (window.scrollY > (window.innerHeight * 0.8) && !isMobile) {
               setColor("black");
-              console.log({isMobile});
             } else {
               setColor("white");
             }

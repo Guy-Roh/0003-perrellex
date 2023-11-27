@@ -57,11 +57,11 @@ section{
     top: 0;
     right: 0;
     height: auto;
-    text-align: right;
-    justify-content: right;
     cursor: pointer;
     color: white;
     transition: color 0s;
+    justify-content: right;
+    text-align: right;
     .menu_item{
         visibility: hidden;
         font-size: 1.5rem;
@@ -347,9 +347,12 @@ section#ABOUT{
     }
 
     #side-menu{
-        
+        justify-content: center;
+        text-align: center;
+        width: 100%;
         .menu_item{
             color: white;
+            justify-content: center;
         }
     }
     section#PORTFOLIO{
