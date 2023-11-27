@@ -360,8 +360,13 @@ section#ABOUT{
             .youtube-video-container{
                 height: 30vh;
             }
+            .hover-overlay{
+                p{
+                    font-size: 1.1rem;
+                }
+            }
         }
-
+        
         .portfolio-toggle{
             padding: 3% 0 1% 0;
             width: 100%;
