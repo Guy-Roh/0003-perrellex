@@ -56,7 +56,7 @@ section{
     position: fixed;
     top: 0;
     right: 0;
-    height: 20vh;
+    height: auto;
     text-align: center;
     cursor: pointer;
     color: white;
@@ -123,7 +123,7 @@ header#HERO{
     min-height: 100vh;
     z-index: 2;
     position: absolute;
-    background: url(/img/diagonal-noise-2.png) repeat;
+    background: url(/img/diagonal-noise-3.png) repeat;
     display: flex;
     justify-content: center;
     align-items: center;
