@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { useMediaQuery } from 'react-responsive';
 
 const SideMenu = () => {
-
+        const isMobile = useMediaQuery({ maxWidth: 767 });
         /*Sets up the scroll event listener to be used for the side menu*/
         const [color, setColor] = useState("white");
         useEffect(() => {
           const handleScroll = () => {
-            if (window.scrollY > (window.innerHeight * 0.8)) {
+            if (window.scrollY > (window.innerHeight * 0.8) && !isMobile) {
               setColor("black");
+              console.log({isMobile});
             } else {
               setColor("white");
             }
@@ -17,6 +19,7 @@ const SideMenu = () => {
             window.removeEventListener("scroll", handleScroll);
           };
         }, []);
+
         const sectionNames = ['HERO', 'PORTFOLIO', 'ABOUT', 'CONTACT'];
         /*Sets up the click event listener for the side menu*/
         const handleClick = (sectionIndex: number) => {

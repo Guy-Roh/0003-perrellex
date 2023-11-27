@@ -57,7 +57,8 @@ section{
     top: 0;
     right: 0;
     height: auto;
-    text-align: center;
+    text-align: right;
+    justify-content: right;
     cursor: pointer;
     color: white;
     transition: color 0s;
@@ -67,6 +68,7 @@ section{
         height: auto;
         opacity: 0;
         transition: color 0s;
+        justify-content: right;
     } 
     &:hover{
     background-color: rgba(167, 167, 167, 0.466);
@@ -344,7 +346,12 @@ section#ABOUT{
         }
     }
 
-    
+    #side-menu{
+        
+        .menu_item{
+            color: white;
+        }
+    }
     section#PORTFOLIO{
         #portfolio-cards-container{
             .youtube-video-container{
