@@ -1,6 +1,8 @@
+import { useMediaQuery } from 'react-responsive';
 import SideMenu from './SideMenu';
 
 const Hero = () => {
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
         <>
@@ -11,10 +13,12 @@ const Hero = () => {
                 <video 
                     id="videoHero" 
                     autoPlay 
-                    src="/video/hero_reel_comp_1.mp4"
                     loop 
                     muted
-                ></video>
+                >
+                    <source src={isMobile ? "/video/hero_reel_comp_2_1.mp4" : "/video/hero_reel_comp_1.mp4"}
+                    type='video/mp4' />
+                </video>
             </header>
             <SideMenu />
         </>
