@@ -2,7 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import SideMenu from './SideMenu';
 
 const Hero = () => {
-    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobile = useMediaQuery({ maxWidth: 480 });
 
     return (
         <>
