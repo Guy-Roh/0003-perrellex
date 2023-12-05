@@ -9,7 +9,7 @@ const ContactSection = () => {
     const socialLinks = [
         "https://www.instagram.com/perrellex.official/",
         "https://www.youtube.com/@perrellex/videos",
-        "mailto:perrellex@gmail.com",
+        "perrellex@gmail.com",
         "tel:+32493143752"
     ];
 
