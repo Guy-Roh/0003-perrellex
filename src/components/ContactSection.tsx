@@ -40,7 +40,7 @@ const ContactSection = () => {
             <footer>
                 <p>© 2024 Perrellex</p>
                 <p>website made by<p onClick={
-                    () => window.open("https://www.linkedin.com/in/guido-rohey-van-raemdonck-3a5b1a1b4/", '_blank')
+                    () => window.open("https://www.linkedin.com/in/guy-van-raemdonck-390bb7204/", '_blank')
                 } style={{ cursor: 'pointer' }
                 }>
                 Guy Van Raemdonck</p></p>
