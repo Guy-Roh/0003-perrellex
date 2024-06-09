@@ -10,7 +10,6 @@ const ContactSection = () => {
         "https://www.instagram.com/perrellex.official/",
         "https://www.youtube.com/@perrellex/videos",
         "perrellex@gmail.com",
-        "tel:+32493143752"
     ];
 
     const handleClick = (listNumber: number) => {
