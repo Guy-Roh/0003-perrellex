@@ -4,7 +4,7 @@
 $graphite: #3b3b3b;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,14 +18,15 @@ $graphite: #3b3b3b;
     height: 100%;
     overflow: hidden;
 }
-body{
+
+body {
     margin: 0;
     width: 100%;
     margin: 0;
 }
 
 /* General  Styling */
-section{
+section {
     width: auto;
     height: 100vh;
     background-color: white;
@@ -35,21 +36,24 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .menu_item {
     width: 100%;
-	justify-content: center;
-	display: flex;
-	margin: auto;
-	flex: 1;
-	align-items: center;
-	font-size: 2.5vmin;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    flex: 1;
+    align-items: center;
+    font-size: 2.5vmin;
     height: 100%;
-	&:hover {
-		cursor: pointer;
-		background: rgba(209, 201, 196, 0.363);
-	}
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(209, 201, 196, 0.363);
+    }
 }
-#side-menu{
+
+#side-menu {
     font-weight: 600;
     z-index: 2;
     padding: 2%;
@@ -62,24 +66,30 @@ section{
     transition: color 0s;
     justify-content: right;
     text-align: right;
-    .menu_item{
+
+    .menu_item {
         visibility: hidden;
         font-size: 1.5rem;
         height: auto;
         opacity: 0;
         transition: color 0s;
         justify-content: right;
-    } 
-    &:hover{
-    background-color: rgba(167, 167, 167, 0.466);
-    color: $graphite;
-        .menu_item{
+    }
+
+    &:hover {
+        background-color: rgba(167, 167, 167, 0.466);
+        color: $graphite;
+
+        .menu_item {
             visibility: visible;
             opacity: 1;
-        };
+        }
+
+        ;
     }
 }
-h1{
+
+h1 {
     font-size: 3rem;
     margin: 0;
     padding: 5%;
@@ -87,23 +97,28 @@ h1{
     padding-top: 10%;
     color: $graphite;
 }
-.custom-button{
-    button{
-    color: $graphite;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    border-radius: 15px;
-    height: 40px;
-    width: auto;
-    padding: 15px;
-    /* border-radius: 0; */
-    &:focus-within, &:hover {
-    background-color: rgba(14, 14, 14, 0.89);
-    color: white;
-    }
+
+.custom-button {
+    button {
+        color: $graphite;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        border-radius: 15px;
+        height: 40px;
+        width: auto;
+        padding: 1rem;
+        font-size: 1.3rem;
+
+        /* border-radius: 0; */
+        &:focus-within,
+        &:hover {
+            background-color: rgba(14, 14, 14, 0.89);
+            color: white;
+        }
     }
 }
-.youtube-video-container{
+
+.youtube-video-container {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -111,15 +126,17 @@ h1{
 }
 
 /* Hero */
-header#HERO{
+header#HERO {
     height: 100vh;
     display: flex;
     justify-content: center;
 }
-.hero-logo{
+
+.hero-logo {
     height: 20vmin;
 }
-#video-overlay{
+
+#video-overlay {
     width: 100%;
     text-align: center;
     min-height: 100vh;
@@ -131,7 +148,8 @@ header#HERO{
     align-items: center;
     color: white;
 }
-video#videoHero{
+
+video#videoHero {
     min-height: 100%;
     max-height: 100vh;
     width: auto;
@@ -139,7 +157,7 @@ video#videoHero{
 }
 
 /* Section Specific Styling */
-section#PORTFOLIO{
+section#PORTFOLIO {
     width: auto;
     height: 100%;
     background-color: white;
@@ -148,32 +166,38 @@ section#PORTFOLIO{
     align-items: center;
     flex-direction: column;
     margin-bottom: 5%;
-    .portfolio-toggle{
+
+    .portfolio-toggle {
         padding: 3%;
         width: 80%;
         display: flex;
         justify-content: center;
-        }
-    #portfolio-cards-container{
+    }
+
+    #portfolio-cards-container {
         display: grid;
         flex-wrap: wrap;
         grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
         width: 80%;
         height: 100%;
         justify-content: center;
-        .youtube-video-container{
+
+        .youtube-video-container {
             height: 100%;
             width: 100%;
         }
-        .video-hover-container{
+
+        .video-hover-container {
             position: relative;
             min-width: 100%;
             cursor: pointer;
-            &:hover .hover-overlay{
+
+            &:hover .hover-overlay {
                 opacity: 0;
             }
         }
-        .hover-overlay{
+
+        .hover-overlay {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -182,7 +206,8 @@ section#PORTFOLIO{
             width: 100%;
             background-color: rgba(0, 0, 0, 0.5);
             transition: all 0.314159265s ease-in-out;
-            p{
+
+            p {
                 font-size: 1.2rem;
                 text-align: center;
                 font-family: "Poppins", sans-serif;
@@ -190,13 +215,15 @@ section#PORTFOLIO{
                 width: 100%;
             }
         }
-        video{
+
+        video {
             display: flex;
             width: 100%;
-            object-fit:cover;
+            object-fit: cover;
             z-index: 0;
             align-self: center;
         }
+
         h2 {
             height: 290px;
             display: flex;
@@ -205,20 +232,23 @@ section#PORTFOLIO{
         }
     }
 }
-section#ABOUT{
+
+section#ABOUT {
     .mobile-text {
         display: none; // Show on mobile
     }
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
-    
-    h1{
+
+    h1 {
         padding-top: 5%;
         padding-bottom: 4%;
     }
-    #about-container{
+
+    #about-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -228,13 +258,15 @@ section#ABOUT{
         height: 100vh;
         border-radius: 10px;
     }
-    #about-photo{
+
+    #about-photo {
         width: 51%;
         height: 100%;
         object-fit: cover;
         border-radius: 8px 0 0 8px;
     }
-    #about-wrapper{
+
+    #about-wrapper {
         position: relative;
         height: 100vh;
         display: flex;
@@ -245,33 +277,38 @@ section#ABOUT{
         color: $graphite;
         width: 50%;
         align-items: center;
-        button{
+
+        button {
             position: absolute;
             bottom: 0;
             font-weight: 800;
             justify-self: flex-end;
             border-bottom-right-radius: 7px;
             font-size: 1rem;
-            height:  80px;
+            height: 80px;
             width: 100%;
             background-color: rgba(255, 255, 255, 0);
             border: none;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 background-color: rgb(68, 68, 68);
                 color: white;
             }
         }
-        p{
+
+        p {
             padding: 5%;
         }
     }
 }
-section#CONTACT{
+
+section#CONTACT {
     height: 70vh;
     align-items: center;
     justify-content: center;
-    p.contact-field{
+
+    p.contact-field {
         display: flex;
         flex-direction: row;
         width: 20%;
@@ -280,20 +317,22 @@ section#CONTACT{
         font-size: 1.2rem;
         align-items: center;
     }
-    svg{
+
+    svg {
         width: 80px;
         height: 60%;
         cursor: pointer;
         max-height: 80px;
     }
 }
-footer{
+
+footer {
     text-align: center;
     padding-bottom: 3%;
 }
 
 /* Specific Styling */
-.Card{
+.Card {
     height: 300px;
     width: 400px;
     margin: 10px;
@@ -301,100 +340,112 @@ footer{
     border-radius: 10px;
     min-width: 250px;
 }
-.Card:hover{
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+.Card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* Media Queries */
 
 @media screen and (min-aspect-ratio: 16/9) {
-    video#videoHero{
+    video#videoHero {
         width: 100%;
         height: auto;
         align-self: center;
         display: flex;
         object-fit: cover;
-        }
-  }
+    }
+}
 
 // smaller than 1600px
 @media (max-width: 1600px) {
-section#ABOUT{
-    p#about-text{
-        font-size: 80%;
+    section#ABOUT {
+        p#about-text {
+            font-size: 80%;
+        }
     }
-  }
 }
 
 @media (max-width: 1200px) {
-    section#ABOUT{
+    section#ABOUT {
         .desktop-text {
             display: none; // Hide on mobile
         }
+
         .mobile-text {
             display: inline; // Show on mobile
         }
-        #about-wrapper{
+
+        #about-wrapper {
             width: 100%;
             height: 60%;
             font-size: 2vh;
         }
-        #about-photo{
+
+        #about-photo {
             border-radius: 10px 10px 0 0;
             width: 101%;
             height: 50%;
             overflow: hidden;
             margin: 0;
         }
-        #about-container{
+
+        #about-container {
             flex-direction: column;
         }
-        p#about-text{
+
+        p#about-text {
             margin-bottom: 30%;
             font-size: 80%;
         }
     }
 
-    #side-menu{
+    #side-menu {
         justify-content: center;
         text-align: center;
         width: 100%;
-        .menu_item{
+
+        .menu_item {
             color: white;
             justify-content: center;
         }
     }
-    section#PORTFOLIO{
-        #portfolio-cards-container{
-            .youtube-video-container{
+
+    section#PORTFOLIO {
+        #portfolio-cards-container {
+            .youtube-video-container {
                 height: 30vh;
             }
-            .hover-overlay{
-                p{
+
+            .hover-overlay {
+                p {
                     font-size: 1.1rem;
                 }
             }
         }
-        
-        .portfolio-toggle{
+
+        .portfolio-toggle {
             padding: 3% 0 1% 0;
             width: 100%;
-            .buttonToggleGroup{
+
+            .buttonToggleGroup {
                 width: 100%;
                 justify-content: center;
-                button{
+
+                button {
                     width: auto;
                     height: 110%;
                     border-radius: 0;
                     font-size: 2.5vw;
-                &:focus-within, &:hover {
-                    background-color: rgba(14, 14, 14, 0.89);
-                    color: white;
+
+                    &:focus-within,
+                    &:hover {
+                        background-color: rgba(14, 14, 14, 0.89);
+                        color: white;
                     }
                 }
             }
         }
     }
-    
-}
 
+}
