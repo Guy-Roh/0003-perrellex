@@ -19,6 +19,12 @@
     },
     {
       "category": "Corporate",
+      "title": "NVAHarelbeke",
+      "link": "https://www.youtube.com/embed/GrHxyMl7dUo",
+      "description": "NVA Harelbeke"
+    },
+    {
+      "category": "Corporate",
       "title": "InimcoRecruitmentVideo",
       "link": "https://www.youtube.com/embed/h6lGKs96Z5A?si=txqXj9AfyMOpD9OG",
       "description": "Inimco<br>Recruitment Video"
@@ -66,6 +72,12 @@
       "description": "Yikes<br>Fien Temmerman - Choreography"
     },
     {
+      "category": "Dance",
+      "title": "AvenueFienTemmerman",
+      "link": "https://www.youtube.com/embed/Mh6EF_3yMoo",
+      "description": "Avenue<br>Fien Temmerman"
+    },
+    {
       "category": "Events",
       "title": "LebrucePerformanceAtLottoArenaAftermovie",
       "link": "https://www.youtube.com/embed/endlo18LKHU?si=eK5Rp2d9Qn3qc7QB",
@@ -76,6 +88,12 @@
       "title": "Cheesecake2021Aftermovie",
       "link": "https://www.youtube.com/embed/Q3tkqeQXSjY?si=6yNyOX9HCXkIOYC8",
       "description": "Cheesecake 2021<br>Aftermovie"
+    },
+    {
+      "category": "Music Videos",
+      "title": "NogSteeds",
+      "link": "https://www.youtube.com/embed/YMxXsJxX2tY?si=fUKxww8emEHKHLKb",
+      "description": "King YD<br>Nog Steeds"
     },
     {
       "category": "Music Videos",

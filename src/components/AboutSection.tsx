@@ -36,7 +36,6 @@ const AboutSection = () => {
                     loop
                     muted
                 />
-
                 <br />
                 <div id="about-wrapper">
                     <InnerText
