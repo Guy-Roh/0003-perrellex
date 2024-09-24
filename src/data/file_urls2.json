@@ -11,29 +11,31 @@
         "link": "https://www.youtube.com/embed/1VfWPy5lA50?si=e5j0xbLDHGFRd1Gs",
         "description": "Politie Sint-Niklaas"
     },
-    {
-        "category": "Corporate",
-        "title": "OmconferenceAftermovie",
-        "link": "https://www.youtube.com/embed/7OqZUbz01eM?si=21ztvlYw-L3nkZcl",
-        "description": "OMConference<br>Aftermovie"
-    },
+
     {
         "category": "Corporate",
         "title": "PasolutionsRecruitmentVideo",
         "link": "https://www.youtube.com/embed/5UmmL-WAmlQ?si=s7ayXjihKKCjEfrZ",
-        "description": "PASolutions<br>Recruitment Video"
+        "description": "PASolutions"
     },
-    {
-        "category": "Corporate",
-        "title": "MoneyMatrixAftermovie",
-        "link": "https://www.youtube.com/embed/kEGwZGyPI0A?si=FhFWBPFasI5AddXW",
-        "description": "Money Matrix<br>Aftermovie"
-    },
+
     {
         "category": "Corporate",
         "title": "InimcoRecruitmentVideo",
         "link": "https://www.youtube.com/embed/h6lGKs96Z5A?si=txqXj9AfyMOpD9OG",
-        "description": "Inimco<br>Recruitment Video"
+        "description": "Inimco"
+    },
+    {
+        "category": "Dance",
+        "title": "AvenueFienTemmerman",
+        "link": "https://www.youtube.com/embed/Mh6EF_3yMoo",
+        "description": "Avenue<br>Fien Temmerman - Choreography"
+    },
+    {
+        "category": "Dance",
+        "title": "YanisMarshallHeelsIntensiveDanceWorkshop",
+        "link": "https://www.youtube.com/embed/p1h0LU3bi2M?si=V_x_kBszdc35xot4",
+        "description": "Yanis Marshall<br>Heels Intensive - Dance Workshop"
     },
     {
         "category": "Dance",
@@ -41,12 +43,7 @@
         "link": "https://www.youtube.com/embed/cRv38rkFyHo?si=xm9q1KyRCwMW-iee",
         "description": "Spotlight<br>Rebecca De Kempe - Choreography"
     },
-    {
-        "category": "Dance",
-        "title": "TheSpotVzwMoveTogetherCreateYourself",
-        "link": "https://www.youtube.com/embed/n94pPXPiY-A?si=eOVMhf6K6cXI13EY",
-        "description": "The Spot Vzw<br>Move Together, Create Yourself"
-    },
+
     {
         "category": "Dance",
         "title": "HowWeMoveTomVanPuymbroeckChoreography",
@@ -73,21 +70,16 @@
     },
     {
         "category": "Dance",
-        "title": "YanisMarshallHeelsIntensiveDanceWorkshop",
-        "link": "https://www.youtube.com/embed/p1h0LU3bi2M?si=V_x_kBszdc35xot4",
-        "description": "Yanis Marshall<br>Heels Intensive - Dance Workshop"
-    },
-    {
-        "category": "Dance",
         "title": "YikesFienTemmermanChoreography",
         "link": "https://www.youtube.com/embed/hI6-Q0o73wI?si=PXslmnJU_4SPVTCu",
         "description": "Yikes<br>Fien Temmerman - Choreography"
     },
+
     {
         "category": "Dance",
-        "title": "AvenueFienTemmerman",
-        "link": "https://www.youtube.com/embed/Mh6EF_3yMoo",
-        "description": "Avenue<br>Fien Temmerman - Choreography"
+        "title": "TheSpotVzwMoveTogetherCreateYourself",
+        "link": "https://www.youtube.com/embed/n94pPXPiY-A?si=eOVMhf6K6cXI13EY",
+        "description": "The Spot Vzw<br>Move Together, Create Yourself"
     },
     {
         "category": "Events",
@@ -100,6 +92,18 @@
         "title": "Cheesecake2021Aftermovie",
         "link": "https://www.youtube.com/embed/Q3tkqeQXSjY?si=6yNyOX9HCXkIOYC8",
         "description": "Cheesecake 2021<br>Aftermovie"
+    },
+    {
+        "category": "Events",
+        "title": "MoneyMatrixAftermovie",
+        "link": "https://www.youtube.com/embed/kEGwZGyPI0A?si=FhFWBPFasI5AddXW",
+        "description": "Money Matrix<br>Aftermovie"
+    },
+    {
+        "category": "Events",
+        "title": "OmconferenceAftermovie",
+        "link": "https://www.youtube.com/embed/7OqZUbz01eM?si=21ztvlYw-L3nkZcl",
+        "description": "OMConference<br>Aftermovie"
     },
     {
         "category": "Music Videos",
