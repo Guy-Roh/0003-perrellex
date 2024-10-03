@@ -1,24 +1,37 @@
-import React, { useRef } from 'react';
+"use client"
+import React, { useEffect, useRef } from 'react';
 
 type videoHoverProps = {
     videoUrl: string
     overlayText: string
+    onClick?: () => void
+    className?: string
 }
 
-const VideoHover = ({videoUrl, overlayText}:videoHoverProps) => {
+const HoverVideo = ({ videoUrl, overlayText, onClick, className }: videoHoverProps) => {
     const videoRef = useRef<HTMLVideoElement>(null!);
-    return(
-        <div 
-          className="video-hover-container" 
-          onMouseOver={() => videoRef.current?.play()} 
-          onMouseOut={() => videoRef.current?.pause()}
+
+    useEffect(() => {
+        // Play and immediately pause to display the first frame
+        videoRef.current.play().then(() => {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0; // Ensure it stays on the first frame
+        });
+    }, []);
+
+    return (
+        <div
+            className={"video-hover-container" + (className ? " " + className : "")}
+            onMouseOver={() => videoRef.current?.play()}
+            onMouseOut={() => videoRef.current?.pause()}
+            onClick={onClick}
         >
             <div className="hover-overlay">
-                <p dangerouslySetInnerHTML={{__html: overlayText}}></p>
+                <p dangerouslySetInnerHTML={{ __html: overlayText }}></p>
             </div>
-            <video ref={videoRef} src={videoUrl} muted loop/>
+            <video ref={videoRef} src={videoUrl} muted loop preload="auto"></video>
         </div>
     )
 }
 
-export default VideoHover;
+export default HoverVideo;
