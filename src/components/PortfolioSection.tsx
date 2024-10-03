@@ -3,12 +3,15 @@ import { Paper, Chip } from "@mui/material";
 import VideoHover from "./HoverVideo";
 import fileUrls from "../data/file_urls2.json";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 type PortfolioSectionProps = {
     fileUrls: { title: string; link: string; description: string }[];
 };
 
 const PortfolioSection = () => {
+    const isMobile = useMediaQuery("(max-width:500px)");
+
     const [selectedVideo, setSelectedVideo] = useState<{
         link: string;
         index: number;
@@ -106,11 +109,12 @@ const PortfolioSection = () => {
                                                 videoUrl={
                                                     "/video/teasers/" +
                                                     videoItem.title +
-                                                    ".mp4"
+                                                    (isMobile? "_frame1.jpg":".mp4" )
                                                 }
                                                 overlayText={
                                                     videoItem.description
                                                 }
+                                                isMobile={isMobile}
                                             />
                                         </Paper>
                                     )}
