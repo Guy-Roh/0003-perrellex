@@ -195,6 +195,10 @@ section#PORTFOLIO {
             &:hover .hover-overlay {
                 opacity: 0;
             }
+
+            &.hovered .hover-overlay {
+                opacity: 0;
+            }
         }
 
         .hover-overlay {

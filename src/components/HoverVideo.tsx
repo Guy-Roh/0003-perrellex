@@ -15,7 +15,7 @@ const HoverVideo = ({ videoUrl, overlayText, onClick, className }: videoHoverPro
         // Play and immediately pause to display the first frame
         videoRef.current.play().then(() => {
             videoRef.current.pause();
-            videoRef.current.currentTime = 0; // Ensure it stays on the first frame
+            videoRef.current.currentTime = .01; // Ensure it stays on the first frame
         });
     }, []);
 
