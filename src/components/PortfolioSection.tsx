@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Paper, Chip } from "@mui/material";
 import VideoHover from "./HoverVideo";
 import fileUrls from "../data/file_urls2.json";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import { useParams } from "react-router-dom";
 
 type PortfolioSectionProps = {
     fileUrls: { title: string; link: string; description: string }[];
@@ -17,11 +18,20 @@ const PortfolioSection = () => {
         index: number;
     } | null>(null);
     const [genre, setGenre] = useState<string | null>("All");
-    const genres = ["Corporate", "Dance", "Events", "Music Videos"];
+    const genres = ["Corporate", "Dance", "Events", "MusicVideos"];
+
+    const { slug } = useParams<{ slug: string }>(); // Get the URL slug
+    console.log("slug: " + slug);
 
     const handleClickVideo = (videoLink: string, index: number) => {
         setSelectedVideo({ link: videoLink, index });
     };
+
+    useEffect(() => {
+        if (slug && genres.map((g) => g.toLowerCase()).includes(slug.toLowerCase())) {
+            setGenre(slug.charAt(0).toUpperCase() + slug.slice(1)); // Capitalize slug
+        }
+    }, [slug]);
 
     const handleClickGenre = (
         _event: React.MouseEvent,
